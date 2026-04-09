@@ -1,271 +1,163 @@
-# Student Management System Created Using Django
-This is a Simple Student Management System Developed While Learning Django.
-Feel free to make changes based on your requirements.
+# Django Student Management System 👨‍🎓
 
-[Front-end Template](http://adminlte.io "Admin LTE.io")
+A modern Student Management System 👨‍🎓 with features like Interactive Dashboard 🤩 Attendance Management 🏫Provide Feedback ✍ Result Generation 📜 Leave Application 🍂
 
+![SMS_Banner](https://github.com/Akash1362000/akash1362000.github.io/blob/master/styles/images/Django%20Student%20Management%20System%20Banner.jpg)
 
-[Project Demo on YouTube](https://www.youtube.com/watch?v=kArCR96m7uo "Django Student Management System Demo")
-
-And if you like this project, then ADD a STAR ⭐️  to this project 👆
-## Deployed to
-https://smswithdjango.herokuapp.com/
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://student-management-webapp.herokuapp.com/)
+[![travis-ci](https://api.travis-ci.com/Akash1362000/Django_Student_Management_System.svg?token=nv6BYq1BY3w4kf8uZuGj&branch=main)](https://travis-ci.com/github/Akash1362000/Django_Student_Management_System/)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAkash1362000%2FDjango_Student_Management_System%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Akash1362000/Django_Student_Management_System/graphs/commit-activity)
 
 
-## Features of this Project
+Checkout the live Website [here](https://student-management-system-4jym.onrender.com/)!
 
-### A. Admin Users Can
-1. See Overall Summary Charts of Students Performances, Staff Performances, Courses, Subjects, Leave, etc.
-2. Manage Staff (Add, Update and Delete)
-3. Manage Students (Add, Update and Delete)
-4. Manage Course (Add, Update and Delete)
-5. Manage Subjects (Add, Update and Delete)
-6. Manage Sessions (Add, Update and Delete)
-7. View Student Attendance
-8. Review and Reply Student/Staff Feedback
-9. Review (Approve/Reject) Student/Staff Leave
+Find the detailed project report [here](https://drive.google.com/file/d/1DTqbRJBoFuCHJdtb0SJwdiLgE6iOgjUG/view?usp=sharing)! 📜
 
-### B. Staff/Teachers Can
-1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
-2. Take/Update Students Attendance
-3. Add/Update Result
-4. Apply for Leave
-5. Send Feedback to HOD
+### Meet the Developers ✨🌟
 
-### C. Students Can
-1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
-2. View Attendance
-3. View Result
-4. Apply for Leave
-5. Send Feedback to HOD
+<table>
+		<tr>
+			<td align="center"><img src="https://i.imgur.com/ZwcK1xV.jpg"  width=100px;"><br /><sub><b>Akash Shrivastava</b></sub><br/><a href="https://github.com/Akash1362000">👨‍💻🚴‍♂️📸</a></td>
+		   <td align="center"><img src="https://i.imgur.com/zvN556m.jpg"  width=100px;"><br /><sub><b>Akanksha Tamboli</b></sub><br/><a href="https://github.com/akankshast">💻🎨</a></td>
+			<td align="center"><img src="https://i.imgur.com/fVE1MSw.jpg"  width=100px;"><br /><sub><b>Shreejit Nair</b></sub><br/><a href="https://github.com/ShreejitNair">🎓🏏📱</a></td>			<td align="center"><img src="https://i.imgur.com/oKHebZM.jpg"  width=100px;"><br /><sub><b>Samiksha Naik</b></sub><br/><a href="https://github.com/samiksha8888989">💃📸</a></td>
+		</tr>
 
+</table>
 
-## 📸 ScreenShots
+## Development 👨‍💻
+Note : Make sure you have Python version 3.8+
 
-<img src="ss/1.png"/>
-<img src="ss/2.png"/>
-<img src="ss/3.png"/>
-<img src="ss/4.png"/>
-<img src="ss/5.png"/>
+Environment Setup 🚀
 
-| Admin| Staff| Student |
-|------|-------|---------|
-|<img src="ss/admin5.png" width="400">|<img src="ss/staff1.png" width="400">|<img src="ss/student1.png" width="400">|
-|<img src="ss/admin2.png" width="400">|<img src="ss/staff2.png" width="400">|<img src="ss/student2.png" width="400">|
-|<img src="ss/admin3.png" width="400">|<img src="ss/staff3.png" width="400">|<img src="ss/student3.png" width="400">|
-|<img src="ss/admin4.png" width="400">|<img src="ss/staff4.png" width="400">|<img src="ss/student4.png" width="400">|
-|<img src="ss/admin1.png" width="400">|<img src="ss/staff5.png" width="400">|<img src="ss/student5.png" width="400">|
-|<img src="ss/admin6.png" width="400">|<img src="ss/staff6.png" width="400">|<img src="ss/student6.png" width="400">|
+`$ git clone https://github.com/Akash1362000/Django_Student_Management_System.git`
 
+`$ cd Django_Student_Management_System/`
 
+Create `.env` file (refer `.env.example` file)
 
-## Support Developer
-1. Add a Star 🌟  to this 👆 Repository
-2. Follow on Twitter/Github
+Generate `SECRET_KEY` from [here](https://djecrety.ir/)
 
+Generate your `CAPTCHA_SECRET` from [here](http://www.google.com/recaptcha/admin)
 
-## Passport/Images
-Images are from [Unsplash](https://unsplash.com)
+Copy your `SITE KEY` after generating `CAPTCHA_SECRET` and paste it in `data-sitekey` in `student_management_app/templates/login_page.html` (replace the current key with your key)
 
+## Database Setup
 
-## How to Install and Run this project?
+Install Postgres Latest version from [here](https://www.postgresql.org/download/)
 
-### Pre-Requisites:
-1. Install Git Version Control
-[ https://git-scm.com/ ]
+Install pgAdmin from [here](https://www.pgadmin.org/download/)
 
-2. Install Python Latest Version
-[ https://www.python.org/downloads/ ]
+Create a Database using pgAdmin by following the steps mentioned [here](https://www.tutorialsteacher.com/postgresql/create-database)
 
-3. Install Pip (Package Manager)
-[ https://pip.pypa.io/en/stable/installing/ ]
+Update your `DATABASE_URL` in `.env` with your DB details like `USER`, `PASSWORD` and `DB_NAME`
 
-*Alternative to Pip is Homebrew*
+---
 
-### Installation
-**1. Create a Folder where you want to save the project**
+If virtualenv is not installed [(What is virtualenv?)](https://www.youtube.com/watch?v=N5vscPTWKOk&t=313s):
 
-**2. Create a Virtual Environment and Activate**
+`$ pip install virtualenv`
 
-Install Virtual Environment First
+Create a virtual environment
+
+`$ virtualenv venv`
+
+Activate the environment everytime you open the project
+
+`$ source venv/Scripts/activate`
+
+Install requirements 🛠
+
+`$ pip install -r requirements.txt`
+
+`$ pre-commit install`
+
+Run migrations for Database
+
+`$ python manage.py migrate`
+
+Create superuser for Admin Login 🔐
+
+`$ python manage.py createsuperuser`
+
+Enter your desired username, email and password. Make sure you remember them as you'll need them in future.
+
+eg.
+
+    Username: admin
+
+    Email: admin@admin.com
+
+    Password: HighlyConfidentialPassword
+
+All Set! 🤩
+
+Now you can run the server to see your application up & running 🚀
+
+`$ python manage.py runserver`
+
+To exit the environment ❎
+
+`$ deactivate`
+
+Every time you want to open the application in browser, make sure you run:
+
+`$ source venv/Scripts/activate`
+
+`$ python manage.py runserver`
+
+---
+## Docker Setup (Optional) ![](https://skillicons.dev/icons?i=docker)
+
+If you want to use Docker to run this project, you need to do the following steps:
+- Install Docker for your OS from [here](https://www.docker.com/products/docker-desktop/)
+- Run `docker --version` and `docker compose --version` [In Windows, you need to run `docker-compose --version` to check the version]
+- If you see both the versions, then Docker is successfully installed on your system and you can follow along
+- If you don't see the version, check with your Docker installation
+- Open `docker-compose.yml` file and update the value of `CAPTCHA_SECRET` with your generated key. You can generate it from [here](http://www.google.com/recaptcha/admin) 
+- Run `docker compose up -d`
+- Run `docker exec -it student_management_system sh -c "python manage.py createsuperuser"` to create a new superuser
+- Access the app at [http://localhost:8000](http://localhost:8000)
+- To stop the container, run `docker compose stop` from the project root
+- To restart the container, run `docker compose start` from the project root
+- To delete the container, run `docker compose down` from the project root
+
+---
+
+## A Glimpse of the Dashboard 😍
+
+![Dashboard](https://i.imgur.com/vN530l3.png)
+
+## Stargazers
+
+[![Stargazers](https://reporoster.com/stars/Akash1362000/Django_Student_Management_System)](https://github.com/Akash1362000/Django_Student_Management_System/stargazers)
+
+Liked our work? 🤔 Do star [this](https://github.com/Akash1362000/Django_Student_Management_System) repository ⭐ It'll motivate us more 😁
+
+---
+
+### License ✍
+
 ```
-$  pip install virtualenv
+MIT License
+
+Copyright (c) 2020 Akash Shrivastava
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
-
-Create Virtual Environment
-
-For Windows
-```
-$  python -m venv venv
-```
-For Mac
-```
-$  python3 -m venv venv
-```
-For Linux
-```
-$  virtualenv .
-```
-
-Activate Virtual Environment
-
-For Windows
-```
-$  source venv/scripts/activate
-```
-
-For Mac
-```
-$  source venv/bin/activate
-```
-
-For Linux
-```
-$  source bin/activate
-```
-
-**3. Clone this project**
-```
-$  git clone https://github.com/jobic10/student-management-using-django.git
-```
-
-Then, Enter the project
-```
-$  cd student-management-using-django
-```
-
-**4. Install Requirements from 'requirements.txt'**
-```python
-$  pip3 install -r requirements.txt
-```
-
-**5. Add the hosts**
-
-- Got to settings.py file 
-- Then, On allowed hosts, Use **[]** as your host. 
-```python
-ALLOWED_HOSTS = []
-```
-*Do not use the fault allowed settings in this repo. It has security risk!*
-
-
-**6. Now Run Server**
-
-Command for PC:
-```python
-$ python manage.py runserver
-```
-
-Command for Mac:
-```python
-$ python3 manage.py runserver
-```
-
-Command for Linux:
-```python
-$ python3 manage.py runserver
-```
-
-**7. Login Credentials**
-
-Create Super User (HOD)
-Command for PC:
-```
-$  python manage.py createsuperuser
-```
-
-Command for Mac:
-```
-$  python3 manage.py createsuperuser
-```
-
-Command for Linux:
-```
-$  python3 manage.py createsuperuser
-```
-
-
-
-Then Add Email and Password
-
-**or Use Default Credentials**
-
-*For HOD /SuperAdmin*
-Email: admin@admin.com
-Password: admin
-
-*For Staff*
-Email: staff@staff.com
-Password: staff
-
-*For Student*
-Email: student@student.com
-Password: student
-
-
-
-## For Sponsor or Projects Enquiry
-1. Email - jobowonubi@gmail.com
-2. LinkedIn - [jobic10](https://www.linkedin.com/in/jobic10 "Owonubi Job Sunday on LinkedIn")
-2. Twitter - [jobic10](https://www.twitter.com/jobic10 "Owonubi Job Sunday on Twitter")
-
-
-
-## Project's Journey
-- [x] Admin/Staff/Student Login
-- [x] Add and Edit Course
-- [x] Add and Edit Staff
-- [x] Add and Edit Student
-- [x] Add and Edit Subject
-- [x] Upload Staff's Picture
-- [x] Upload Student's Picture
-- [x] Sidebar Active Status
-- [x] Named URLs
-- [x] Model Forms for adding  student
-- [x] Model Forms for all
-- [x] Views Permission (MiddleWareMixin)
-- [x] Attendance and Update Attendance
-- [x] Password Reset Via Email
-- [x] Apply For Leave
-- [x] Students Can Check Attendance
-- [x] Check Email Availability
-- [x] Reply to Leave Applications
-- [x] Reply to Feedback
-- [x] Admin View Attendance
-- [x] Password Change for Admin, Staff and Students using *set_password()*
-- [x] Admin Profile Edit
-- [x] Staff Profile Edit
-- [x] Student Profile Edit
-- [x] Student Dashboard Fixed
-- [x] Passing Page Title From View  - Improved
-- [x] Staff Dashboard Fixed
-- [x] Admin Dashboard Fixed
-- [x] Firebase Web Push Notifications
-- [x] Staff Add Student's Result
-- [x] Staff Edit Result Using CBVs (Class Based Views)
-- [x] Google CAPTCHA
-- [x] Student View Result
-- [x] Change all links to be dynamic
-- [x] Code Restructure - Very Important
-
-
-## Questions I asked While Developing This
-- https://stackoverflow.com/questions/63829896/is-there-a-specific-way-of-adding-apps-in-django/
-
-
-## Helpful Links
-- https://stackoverflow.com/questions/55969952/how-can-i-avoid-a-user-from-registering-an-already-used-email-in-django
-- https://stackoverflow.com/questions/7562573/how-do-i-get-django-forms-to-show-the-html-required-attribute
-- https://stackoverflow.com/questions/40910149/django-exists-versus-doesnotexist
-- https://www.edureka.co/community/80982/how-can-i-have-multiple-models-in-a-single-django-modelform
-- https://stackoverflow.com/questions/12848605/django-modelform-what-is-savecommit-false-used-for
-- https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html
-- https://stackoverflow.com/questions/32576348/how-can-i-create-django-modelform-for-an-abstract-model
-- https://www.fomfus.com/articles/how-to-use-email-as-username-for-django-authentication-removing-the-username
-- https://stackoverflow.com/questions/64145745/create-user-missing-1-required-positional-argument-username?noredirect=1#64145844
-- https://stackoverflow.com/questions/36059194/what-is-the-difference-between-json-dump-and-json-dumps-in-python
-- https://stackoverflow.com/questions/64188313/django-can-i-delete-apps-static-files-after-running-collectstatic/64189244#64189244
-- https://stackoverflow.com/questions/29416478/change-form-field-value-before-saving
-- https://support.google.com/mail/thread/38519529?hl=en
-- https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
-- https://stackoverflow.com/questions/3429084/why-do-i-get-an-object-is-not-iterable-error
